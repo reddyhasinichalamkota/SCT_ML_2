@@ -1,16 +1,21 @@
 # SCT_ML_2
-# 🛍️ Customer Segmentation using K-Means Clustering
+# Customer Segmentation using K-Means Clustering
 
-## 📌 Project Overview
-This project uses the **K-Means Clustering Algorithm** to group customers of a retail store based on their purchase history. The goal is to identify customer segments that can help businesses improve marketing strategies and customer experience.
+## Overview
+This project applies the **K-Means Clustering** algorithm to segment customers of a retail store based on their purchase behavior. Customer segmentation helps businesses identify different groups of customers and enables data-driven marketing strategies, personalized recommendations, and improved customer retention.
 
-## 🎯 Objective
-To analyze customer data and divide customers into meaningful groups based on similar purchasing behavior.
+## Objective
+The objective of this project is to analyze customer purchasing patterns and group customers into distinct clusters based on similar characteristics such as income and spending habits.
 
-## 🧠 Algorithm Used
-- K-Means Clustering (Unsupervised Machine Learning)
+## Key Features
+- Data preprocessing and cleaning  
+- Exploratory Data Analysis (EDA)  
+- Optimal cluster selection using the Elbow Method  
+- Customer segmentation using K-Means Clustering  
+- Cluster visualization and interpretation  
+- Business insights generation  
 
-## 🛠️ Technologies Used
+## Technologies Used
 - Python  
 - Pandas  
 - NumPy  
@@ -18,8 +23,8 @@ To analyze customer data and divide customers into meaningful groups based on si
 - Seaborn  
 - Scikit-learn  
 
-## 📂 Dataset Features
-The dataset contains the following customer details:
+## Dataset Information
+The dataset includes customer information such as:
 
 - Customer ID  
 - Gender  
@@ -27,28 +32,38 @@ The dataset contains the following customer details:
 - Annual Income  
 - Spending Score  
 
-## 📈 Workflow
-1. Import dataset  
-2. Data preprocessing  
-3. Exploratory Data Analysis  
-4. Use Elbow Method to determine optimal clusters  
-5. Apply K-Means Clustering  
-6. Visualize customer segments  
-7. Analyze insights  
+## Methodology
 
-## 📊 Output
-The customers are grouped into clusters such as:
+### 1. Data Collection
+Loaded the customer dataset and reviewed its structure.
 
-- High Income – High Spending  
-- High Income – Low Spending  
-- Low Income – High Spending  
-- Low Income – Low Spending  
+### 2. Data Preprocessing
+Handled missing values, selected relevant features, and prepared the data for clustering.
+
+### 3. Finding Optimal Clusters
+Used the **Elbow Method** to determine the ideal number of clusters for the dataset.
+
+### 4. Model Training
+Applied the K-Means algorithm to group customers into clusters.
+
+### 5. Visualization
+Generated scatter plots to visualize customer segments.
+
+## Output
+The model segments customers into categories such as:
+
+- High Income, High Spending  
+- High Income, Low Spending  
+- Low Income, High Spending  
+- Low Income, Low Spending  
 - Average Customers  
 
-## 🚀 How to Run
+## Project Structure
 
 ```bash
-git clone https://github.com/reddyhasinichalamkota/SCT_ML_2.git
-cd SCT_ML_2
-pip install -r requirements.txt
-python customer_segmentation.py
+SCT_ML_2/
+│── customer_segmentation.py
+│── Mall_Customers.csv
+│── README.md
+│── requirements.txt
+│── output.png
