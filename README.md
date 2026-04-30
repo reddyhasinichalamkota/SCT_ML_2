@@ -170,14 +170,3 @@ K-Means Clustering is useful because:
 - Supports business decision making
 
 ---
-
-## Future Improvements
-
-- Use PCA for better visualization
-- Use Hierarchical Clustering
-- Use DBSCAN for irregular clusters
-- Build customer recommendation system
-- Deploy dashboard using Streamlit
-- Real-time customer segmentation
-
----
